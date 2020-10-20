@@ -1,2 +1,1 @@
-# SBU-thesis-template
-The latex template for Stony Brook University PhD Thesis
+I am shocked by the lack of LaTeX tamplate for PhD Thesis at Stony Brook graduate school. Thank them to be totally spotlessly useless. 

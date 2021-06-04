@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Masters/Doctoral Thesis 
 % LaTeX Template
-% Version 2.3 (25/3/16)
+% Version 3.0 (2021/06/03)
 %
 % This template has been downloaded from:
 % http://www.LaTeXTemplates.com
@@ -9,9 +9,13 @@
 % Version 2.x major modifications by:
 % Vel (vel@latextemplates.com)
 %
+% Version 3.x major modifications by:
+% urfdvw (urfdvw@gmail.com)
+%
 % This template is based on a template by:
 % Steve Gunn (http://users.ecs.soton.ac.uk/srg/softwaretools/document/templates/)
 % Sunil Patel (http://www.sunilpatel.co.uk/thesis-template/)
+% Avi Srivastava (https://github.com/k3yavi/thesis)
 %
 % Template license:
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
@@ -19,7 +23,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
-%    PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%   DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 \documentclass[
@@ -27,7 +31,7 @@
 oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
 % chapterinoneline,% Have the chapter title next to the number in one single line
 english, % ngerman for German
-singlespacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
+doublespacing, % Single line spacing, choose from: singlespacing, onehalfspacing or doublespacing
 % draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
 %nolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
 liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
@@ -37,22 +41,27 @@ liststotoc, % Uncomment to add the list of figures/tables/etc to the table of co
 % headsepline, % Uncomment to get a line under the header
 ]{main} % The class file specifying the document structure
 
+%----------------------------------------------------------------------------------------
+%    Default Packages
+%----------------------------------------------------------------------------------------
+
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Output font encoding for international characters
 \usepackage{palatino} % Use the Palatino font by default
-\usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
+\usepackage[backend=bibtex,style=numeric,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 
 %----------------------------------------------------------------------------------------
 %    Your Packages
 %----------------------------------------------------------------------------------------
+
 \usepackage{amsmath}
 \usepackage{amssymb}
-
 
 %----------------------------------------------------------------------------------------
 %    MARGIN SETTINGS
 %----------------------------------------------------------------------------------------
+
 \addbibresource{main.bib} % The filename of the bibliography
 
 \geometry{
@@ -73,12 +82,12 @@ liststotoc, % Uncomment to add the list of figures/tables/etc to the table of co
 
 \thesistitle{Thesis Title}
 % Your thesis title, this is used in the title and abstract, print it elsewhere with \ttitle
-\supervisor{Supervisor Name}  % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
-\examinerO{Chairperson Name} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
-\examinerTh{3rd Examiner Name} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
-\examinerJr{4th Examiner Name} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
+\supervisor{Supervisor's Name}  % Your supervisor's name, this is used in the title page, print it elsewhere with \supname
+\examinerO{Chairperson's Name} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
+\examinerTh{3rd Examiner's Name} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
+\examinerJr{4th Examiner's Name} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
 \degree{Doctor of Philosophy} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
-\author{Author Name} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
+\author{Author's Name} % Your name, this is used in the title page and abstract, print it elsewhere with \authorname
 \addresses{} % Your address, this is not currently used anywhere in the template, print it elsewhere with \addressname
 
 \subject{Subject Area} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
@@ -114,7 +123,7 @@ liststotoc, % Uncomment to add the list of figures/tables/etc to the table of co
  
 \large A Dissertation presented \\[0.5cm] 
 by \\[0.5cm] 
-\textbf{\href{http://k3yavi.github.io/}{\authorname}} \\[0.5cm] 
+\textbf{{\authorname}} \\[0.5cm] 
 to \\[0.5cm] 
 The Graduate School \\[0.5cm] 
 in Partial Fulfillment of the \\[0.5cm]
@@ -136,6 +145,7 @@ in\\[0.5cm]
 %----------------------------------------------------------------------------------------
 %    DECLARATION PAGE
 %----------------------------------------------------------------------------------------
+
 \setcounter{page}{2}
 \begin{center}
 	\textbf{\univname}\\[0.5cm]
@@ -207,7 +217,7 @@ in\\[0.5cm]
 
 \noindent\enquote{\itshape If there is a quotation in your mind, but you don't know who said that, just say it was I said it.}\bigbreak
 
-\hfill Roson
+\hfill --Roson
 
 %----------------------------------------------------------------------------------------
 %    LIST OF CONTENTS/FIGURES/TABLES PAGES

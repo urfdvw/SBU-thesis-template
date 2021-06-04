@@ -42,10 +42,10 @@ This template is modified from [the thesis of Avi Srivastava](https://github.com
 
 
 ## Warnings and Tricks (From the most important to the least)
-- **The ONLY reason that you want to use LaTeX, is that there are off-the-shelf templates available such as a conference paper template from the conference website and this thesis template. NEVER, EVER, EVER, start a LaTeX document from scratch!**
+- **The ONLY reason that you want to use LaTeX is that there are off-the-shelf templates available such as a conference paper template from the conference website and this thesis template. NEVER, EVER, EVER, start a LaTeX document from scratch!**
 - It is highly recommended that any LaTeX users head to [Overleaf](https://www.overleaf.com/). Avoid using any offline distributions anytime possible.
 - Never define your own command if you don't want to confuse your co-author or yourself-years-later.
-- Use `\begin{align}` instead of `\begin{equation}`. They are basically the same, but `align` will allow you to add additional lines of existing equations whenever needed with ease.
+- Use `\begin{align}` instead of `\begin{equation}`. They are basically the same, but `align` will allow you to add additional lines to existing equations whenever needed with ease.
 - When editing equations, put the equations' latex code into multiple lines, with indention.
     - The rule of thumb is to never let the equation auto wrapped to a new line
     - Indention rules are flexible since indention is for easier reading, not a part of the syntax.

@@ -1,4 +1,4 @@
-# Stony Brook University Ph.D. Thesis LaTeX Template
+# The latex template for Stony Brook University Ph.D. and MS Thesis
 
 ## Motivation 
 

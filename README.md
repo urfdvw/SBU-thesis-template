@@ -39,6 +39,10 @@ This template is modified from [the thesis of Avi Srivastava](https://github.com
     - If you generated your tables from [tablesgenerator.com](https://www.tablesgenerator.com/) (Highly suggested), put the source file of the table here as well.
 - The `Appendices` folder
     - If you have appendices, put them here as separated `.tex` files.
+- The `main.bib` file
+    - All citations should be here,
+    - If you have many `.bib` files from previous papers, you can use [This tool](https://urfdvw.github.io/bibmerge/) to merge them into one file.
+        - in case you never used any citation management software.
 
 
 ## Warnings and Tricks (From the most important to the least)

@@ -41,8 +41,19 @@ This template is modified from [the thesis of Avi Srivastava](https://github.com
     - If you have appendices, put them here as separated `.tex` files.
 - The `main.bib` file
     - All citations should be here,
-    - If you have many `.bib` files from previous papers, you can use [This tool](https://urfdvw.github.io/bibmerge/) to merge them into one file.
-        - in case you never used any citation management software.
+
+## Additional tools
+- [Bib file merge tool](https://urfdvw.github.io/bibmerge/)
+    - In case you never used any citation management software and you have many `.bib` files from previous papers, you can use to merge them into one.
+- `CiatationChecker.py` file
+    - This Python script locates at the root directory of this repository.
+    - It will count how many times you cited each paper by scaning your `.tex` and `.bib` files.
+        - This will be helpful to identify un-cited papers in the `.bib` file
+    - **How to use**: 
+        - You need to download your Overleaf project to local and unzip.
+        - You also need to have a python distribution installed
+        - By running the script, it will generate a `.csv` table showing the countings.
+- [LaTex table generator](https://www.tablesgenerator.com/)
 
 
 ## Warnings and Tricks (From the most important to the least)
@@ -55,4 +66,3 @@ This template is modified from [the thesis of Avi Srivastava](https://github.com
     - Indention rules are flexible since indention is for easier reading, not a part of the syntax.
         - It is suggested to follow the indention rule of programming languages, such as the `{}` rules of C++.
 - If a paragraph contains many in-line equations, make each equation a new line in the latex code, so that you can relocate them easily by double clicking on the preview.
-- Generate the tables from [tablesgenerator.com](https://www.tablesgenerator.com/)

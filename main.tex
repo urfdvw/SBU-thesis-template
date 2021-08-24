@@ -215,7 +215,9 @@ in\\[0.5cm]
 
 \vspace*{0.2\textheight}
 
-\noindent\enquote{\itshape If there is a quotation in your mind, but you don't know who said that, just say it was I said it.}\bigbreak
+\noindent\enquote{\itshape 
+If there is a quotation in your mind, but you don't know who said that, just say it was I that said it.
+}\bigbreak
 
 \hfill --Roson
 
@@ -290,8 +292,12 @@ in\\[0.5cm]
 %----------------------------------------------------------------------------------------
 %    BIBLIOGRAPHY
 %----------------------------------------------------------------------------------------
-\setlength\bibitemsep{1\itemsep}
+{
+\begin{singlespace}
+\setlength\bibitemsep{2\itemsep}
 \printbibliography[heading=bibintoc]
+\end{singlespace}
+}
 
 %----------------------------------------------------------------------------------------
 %    THESIS CONTENT - APPENDICES

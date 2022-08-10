@@ -50,6 +50,7 @@ liststotoc, % Uncomment to add the list of figures/tables/etc to the table of co
 \usepackage{palatino} % Use the Palatino font by default
 \usepackage[backend=bibtex,style=numeric,natbib=true]{biblatex} % Use the bibtex backend with the authoryear citation style (which resembles APA)
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+\addbibresource{main.bib} % The filename of the bibliography
 
 %----------------------------------------------------------------------------------------
 %    Your Packages
@@ -61,8 +62,6 @@ liststotoc, % Uncomment to add the list of figures/tables/etc to the table of co
 %----------------------------------------------------------------------------------------
 %    MARGIN SETTINGS
 %----------------------------------------------------------------------------------------
-
-\addbibresource{main.bib} % The filename of the bibliography
 
 \geometry{
     paper=a4paper, % Change to letterpaper for US letter
@@ -153,7 +152,7 @@ in\\[0.5cm]
 \begin{center}
 Copyright by\\
 Your Name\\
-2019\\
+2021\\
 \end{center}
 \newpage
 \pagenumbering{roman}
@@ -186,18 +185,8 @@ Your Name\\
 	This dissertation is accepted by the Graduate School\\ [2cm]
 	Eric Wertheimer\\ [0.5cm]
 	Dean of the Graduate School\\ [0.5cm]
-	
-% \afterpage{\null\newpage}
-% \noindent I, \authorname, declare that this report titled, \enquote{\ttitle} and the work presented in it are my own. I confirm that:
-%
-% \noindent Signed:\\
-% \rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
-%
-% \noindent Date:\\
-% \rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
-\end{center}
 
-% \cleardoublepage
+\end{center}
 
 %----------------------------------------------------------------------------------------
 %    ABSTRACT PAGE
